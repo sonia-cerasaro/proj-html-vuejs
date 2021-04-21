@@ -1,0 +1,22 @@
+section {
+  &.section_one {
+    width: 100vw;
+    height: 108vh;
+    div {
+      &.section_container {
+        width: 80%;
+        margin: 0 auto;
+        border: black solid 1px;
+        div {
+          &.card {
+            width: 50%;
+            height: 350px;
+            display: inline-block;
+            float: right;
+            border: black solid 1px;
+          }
+        }
+      }
+    }
+  }
+}

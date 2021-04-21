@@ -1,0 +1,14 @@
+header {
+  div {
+    &.nav_container {
+      width: 100vw;
+      background-color: lightblue;
+      nav {
+        &.my_nav {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+section {
+  &.section_two {
+    width: 100vw;
+    height: 50vh;
+    background-color: lightblue;
+    div {
+      &.brands_title {
+        @include container-center;
+      }
+    }
+  }
+}
+div {
+  &.brands_container {
+    @include container-center;
+    height: 50px;
+    display: flex;
+    div {
+      &.brand_box {
+        width: calc(100% / 6);
+        height: 100%;
+        border: black solid 1px;
+      }
+    }
+  }
+}
+div {
+  &.brands_reference {
+    @include container-center;
+    height: 50px;
+    display: flex;
+    div {
+      &.spec_container {
+        width: calc(100% / 3);
+        height: 100%;
+        border: black solid 1px;
+
+      }
+    }
+
+  }
+}
+div {
+  &.spec_container.face {
+    display: flex;
+  }
+}

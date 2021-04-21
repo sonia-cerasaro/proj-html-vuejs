@@ -5,3 +5,79 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+header div.nav_container {
+  width: 100vw;
+  background-color: lightblue;
+}
+header div.nav_container nav.my_nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.jumbotron div.jumbo_container {
+  width: 80%;
+  margin: 0 auto;
+}
+.jumbotron div.jumbo_container div.jumbo_contents {
+  width: 55%;
+}
+
+section.section_one {
+  width: 100vw;
+  height: 108vh;
+}
+section.section_one div.section_container {
+  width: 80%;
+  margin: 0 auto;
+  border: black solid 1px;
+}
+section.section_one div.section_container div.card {
+  width: 50%;
+  height: 350px;
+  display: inline-block;
+  float: right;
+  border: black solid 1px;
+}
+
+section.section_two {
+  width: 100vw;
+  height: 50vh;
+  background-color: lightblue;
+}
+section.section_two div.brands_title {
+  width: 80%;
+  margin: 0 auto;
+}
+
+div.brands_container {
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+}
+div.brands_container div.brand_box {
+  width: calc(100% / 6);
+  height: 100%;
+  border: black solid 1px;
+}
+
+div.brands_reference {
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+}
+div.brands_reference div.spec_container {
+  width: calc(100% / 3);
+  height: 100%;
+  border: black solid 1px;
+}
+
+div.spec_container.face {
+  display: flex;
+}

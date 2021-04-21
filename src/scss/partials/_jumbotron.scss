@@ -1,0 +1,13 @@
+.jumbotron {
+  div {
+    &.jumbo_container {
+      width: 80%;
+      margin: 0 auto;
+      div {
+        &.jumbo_contents {
+          width: 55%;
+        }
+      }
+    }
+  }
+}
