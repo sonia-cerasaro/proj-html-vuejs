@@ -1,0 +1,23 @@
+section {
+  &.section_four {
+    width: 100vw;
+    height: 95vh;
+    background-color: lightblue;
+    div {
+      &.about_container {
+        @include container-center;
+        height: 80%;
+
+        div {
+          &.square_card {
+            width: calc(100% / 2);
+            height: 50%;
+            border: black solid 1px;
+            display: inline-block;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}

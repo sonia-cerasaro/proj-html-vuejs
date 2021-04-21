@@ -46,7 +46,7 @@ section.section_one div.section_container div.card {
 
 section.section_two {
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   background-color: lightblue;
 }
 section.section_two div.brands_title {
@@ -80,4 +80,48 @@ div.brands_reference div.spec_container {
 
 div.spec_container.face {
   display: flex;
+}
+
+section.section_three {
+  width: 100vw;
+  height: 50vh;
+  background-color: lightgrey;
+}
+section.section_three div.container_title {
+  width: 80%;
+  margin: 0 auto;
+}
+section.section_three div.cards_container {
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+section.section_three div.cards_container div.cards {
+  width: calc(93% / 3);
+  height: 100%;
+  border: black solid 1px;
+}
+section.section_three div.container_button {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section.section_four {
+  width: 100vw;
+  height: 95vh;
+  background-color: lightblue;
+}
+section.section_four div.about_container {
+  width: 80%;
+  margin: 0 auto;
+  height: 80%;
+}
+section.section_four div.about_container div.square_card {
+  width: calc(100% / 2);
+  height: 50%;
+  border: black solid 1px;
+  display: inline-block;
+  float: right;
 }

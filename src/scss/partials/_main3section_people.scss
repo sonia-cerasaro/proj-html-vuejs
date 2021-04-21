@@ -1,0 +1,33 @@
+section {
+  &.section_three {
+    width: 100vw;
+    height: 50vh;
+    background-color: lightgrey;
+    div {
+      &.container_title {
+        @include container-center;
+
+      }
+    }
+    div {
+      &.cards_container {
+        @include container-center;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        div {
+          &.cards {
+            width: calc(93% / 3);
+            height: 100%;
+            border: black solid 1px;
+          }
+        }
+      }
+    }
+    div {
+      &.container_button {
+        @include container-center;
+      }
+    }
+  }
+}
