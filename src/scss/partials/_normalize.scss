@@ -5,3 +5,15 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+
+
+// 1- Strutturare lo scheletro di tutto il mockup in HTML
+// 2- Individuare elementi css comuni
+// 3- Crearli in Common/ Variables/ mixins
+// 4- Aggiungerli nell'html / partials senza soffermarsi troppo nel dettaglio
+// 5- Completare tutto lo stile di navabar e footer
+// 6- Attraverso VueJs inserire dinamicamente i links che compongono header / footer
+//    - Creare Arrays con i nomi dei Links e ciclarli in li.
+//    - Creare struttura Dati dove inseriro' i links,
+//       al click sui links di header / footer dovrei vedere le pagine corrispondenti.
+// 7- Se VueJs e' funzionante, completare lo style del mockup
