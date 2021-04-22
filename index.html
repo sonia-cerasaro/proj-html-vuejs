@@ -12,351 +12,344 @@
     <link rel="stylesheet" href="./dist/css/master.css">
   </head>
   <body>
+    <div id="root">
 
-    <header>
+      <header>
 
-      <div class="nav_container">
-        <nav class="navbar navbar-expand-lg navbar-light my_nav">
-          <a class="navbar-brand" href="#">
-            <img src="./dist/images/avada-marketing-logo.png" alt="">
-          </a>
+        <div class="nav_container">
+          <nav class="navbar navbar-expand-lg navbar-light my_nav">
+            <a class="navbar-brand" href="#">
+              <img src="./dist/images/avada-marketing-logo.png" alt="">
+            </a>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto my_nav_ul">
-              <li class="nav-item active">
-                <a class="nav-link" href="/Users/fortunato/Desktop/GENERAL FOLDER/BOOLEAN/Repository/proj-html-vuejs/services.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Why Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Case Studies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto my_nav_ul">
+                <li class="nav-item"
+                v-for="contact in navContacts"
+                v-on:click="onSelectedContact()">
+                  <a class="nav-link" href="#">
+                    {{ contact.name }}
+                  </a>
+                </li>
+        
+              </ul>
 
-            <form class="form-inline my-2 my-lg-0">
+              <form class="form-inline my-2 my-lg-0">
 
-              <div class="telephone_number_cont">
-                <i class="fas fa-phone-alt"></i>
-                <p>(555) 802-1234</p>
-              </div>
+                <div class="telephone_number_cont">
+                  <i class="fas fa-phone-alt"></i>
+                  <p>(555) 802-1234</p>
+                </div>
 
-              <button class="btn btn-outline-success my-2 my-sm-0 my_button" type="submit">
-                Free Quote</button>
-            </form>
-          </div>
-        </nav>
-      </div>
+                <button class="btn btn-outline-success my-2 my-sm-0 my_button" type="submit">
+                  Free Quote</button>
+              </form>
+            </div>
+          </nav>
+        </div>
 
-      <div class="jumbotron">
-        <div class="jumbo_container">
-          <div class="jumbo_contents">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4 ">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
+        <div class="jumbotron">
+          <div class="jumbo_container">
+            <div class="jumbo_contents">
+              <h1 class="display-4">Hello, world!</h1>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <hr class="my-4 ">
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <section class="section_one">
-        <div class="section_container">
+      <main>
+        <section class="section_one">
+          <div class="section_container">
 
-          <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
             </div>
 
           </div>
-          <div class="card">
-          </div>
-          <div class="card">
-          </div>
-          <div class="card">
-          </div>
-          <div class="card">
-          </div>
-          <div class="card">
+
+        </section>
+        <section class="section_two">
+
+          <div class="brands_title">
+            <h5>Some Brands We Work With</h5>
+            <p>hello</p>
           </div>
 
-        </div>
+          <div class="brands_container">
 
-      </section>
-      <section class="section_two">
-
-        <div class="brands_title">
-          <h5>Some Brands We Work With</h5>
-          <p>hello</p>
-        </div>
-
-        <div class="brands_container">
-
-          <div class="brand_box">
-            hello
-          </div>
-          <div class="brand_box">
-            hello
-          </div>
-          <div class="brand_box">
-            hello
-          </div>
-          <div class="brand_box">
-            hello
-          </div>
-          <div class="brand_box">
-            hello
-          </div>
-          <div class="brand_box">
-            hello
-          </div>
-
-
-
-
-
-        </div>
-
-        <div class="brands_reference">
-
-          <div class="spec_container face">
-
-            <div class="avatar">
+            <div class="brand_box">
               hello
             </div>
-            <div class="name_cont_cont">
-              <div class="name">
+            <div class="brand_box">
+              hello
+            </div>
+            <div class="brand_box">
+              hello
+            </div>
+            <div class="brand_box">
+              hello
+            </div>
+            <div class="brand_box">
+              hello
+            </div>
+            <div class="brand_box">
+              hello
+            </div>
+
+
+
+
+
+          </div>
+
+          <div class="brands_reference">
+
+            <div class="spec_container face">
+
+              <div class="avatar">
                 hello
               </div>
-              <div class="profession">
-                hello
+              <div class="name_cont_cont">
+                <div class="name">
+                  hello
+                </div>
+                <div class="profession">
+                  hello
+                </div>
               </div>
+
+            </div>
+
+            <div class="spec_container">
+              <p></p>
+            </div>
+
+            <div class="spec_container">
+              <button type="button" name="button">
+                button
+              </button>
             </div>
 
           </div>
 
-          <div class="spec_container">
-            <p></p>
+        </section>
+        <section class="section_three">
+
+          <div class="container_title">
+            <h5>Trusted by Leading Organisations</h5>
           </div>
 
-          <div class="spec_container">
+          <div class="cards_container">
+            <div class="cards">
+
+            </div>
+            <div class="cards">
+
+            </div>
+            <div class="cards">
+
+            </div>
+          </div>
+
+          <div class="container_button">
             <button type="button" name="button">
               button
             </button>
-          </div>
-
-        </div>
-
-      </section>
-      <section class="section_three">
-
-        <div class="container_title">
-          <h5>Trusted by Leading Organisations</h5>
-        </div>
-
-        <div class="cards_container">
-          <div class="cards">
-
-          </div>
-          <div class="cards">
-
-          </div>
-          <div class="cards">
-
-          </div>
-        </div>
-
-        <div class="container_button">
-          <button type="button" name="button">
-            button
-          </button>
-
-        </div>
-
-      </section>
-      <section class="section_four">
-
-        <div class="about_container">
-          <div class="square_card">
-          </div>
-          <div class="square_card">
-          </div>
-          <div class="square_card">
-          </div>
-          <div class="square_card">
-          </div>
-        </div>
-
-        <div class="title_awards">
-          <h5>Awards</h5>
-        </div>
-        <div class="container_awards">
-
-          <div class="cont_winner">
-          </div>
-          <div class="cont_winner">
-          </div>
-          <div class="cont_winner">
-          </div>
-          <div class="cont_winner">
-          </div>
-
-        </div>
-
-      </section>
-      <section class="secttion_five">
-
-        <div class="woman_container">
-          <div class="cards_container_woman">
-
-          </div>
-          <div class="cards_container_woman">
 
           </div>
 
-        </div>
+        </section>
+        <section class="section_four">
 
-      </section>
-      <section class="section_six">
-
-        <div class="market_container">
-          <div class="elements_cont">
-            <h4>Marketing Resources: Insider Advice on How
-            to Increase Online Sales</h4>
-          </div>
-          <div class="elements_cont">
-            <button type="button" name="button">
-            button</button>
-          </div>
-        </div>
-
-        <div class="blog_container">
-          <div class="blog_card_cont">
-          </div>
-          <div class="blog_card_cont">
-          </div>
-          <div class="blog_card_cont">
-          </div>
-        </div>
-
-      </section>
-      <section class="section_seven">
-        <div class="center_container">
-          <div class="contact_container">
-            <h3>Let's Make Things Happen</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="contact_container">
-            <div class="form">
-
+          <div class="about_container">
+            <div class="square_card">
+            </div>
+            <div class="square_card">
+            </div>
+            <div class="square_card">
+            </div>
+            <div class="square_card">
             </div>
           </div>
-        </div>
 
+          <div class="title_awards">
+            <h5>Awards</h5>
+          </div>
+          <div class="container_awards">
 
-
-      </section>
-    </main>
-
-    <footer>
-
-      <div class="foot_first_section">
-
-        <div class="cont_left">
-          <p>Lorem ipsum dolor sit amet, consectetur</p>
-          <div class="cont_social">
-            <div class="cont_i">
-              H
+            <div class="cont_winner">
             </div>
-            <div class="cont_i">
-              H
+            <div class="cont_winner">
             </div>
-            <div class="cont_i">
-              H
+            <div class="cont_winner">
             </div>
-            <div class="cont_i">
-              H
-            </div>
-            <div class="cont_i">
-              H
-            </div>
-            <div class="cont_i">
-              H
+            <div class="cont_winner">
             </div>
 
           </div>
-        </div>
 
-        <div class="cont_right">
+        </section>
+        <section class="secttion_five">
 
-          <div class="cont_ul">
-            <ul>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-            </ul>
+          <div class="woman_container">
+            <div class="cards_container_woman">
+
+            </div>
+            <div class="cards_container_woman">
+
+            </div>
+
           </div>
 
-          <div class="cont_ul">
-            <ul>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-            </ul>
+        </section>
+        <section class="section_six">
+
+          <div class="market_container">
+            <div class="elements_cont">
+              <h4>Marketing Resources: Insider Advice on How
+              to Increase Online Sales</h4>
+            </div>
+            <div class="elements_cont">
+              <button type="button" name="button">
+              button</button>
+            </div>
           </div>
 
-          <div class="cont_ul">
-            <ul>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-            </ul>
+          <div class="blog_container">
+            <div class="blog_card_cont">
+            </div>
+            <div class="blog_card_cont">
+            </div>
+            <div class="blog_card_cont">
+            </div>
+          </div>
+
+        </section>
+        <section class="section_seven">
+          <div class="center_container">
+            <div class="contact_container">
+              <h3>Let's Make Things Happen</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="contact_container">
+              <div class="form">
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </section>
+      </main>
+
+      <footer>
+
+        <div class="foot_first_section">
+
+          <div class="cont_left">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <div class="cont_social">
+              <div class="cont_i">
+                H
+              </div>
+              <div class="cont_i">
+                H
+              </div>
+              <div class="cont_i">
+                H
+              </div>
+              <div class="cont_i">
+                H
+              </div>
+              <div class="cont_i">
+                H
+              </div>
+              <div class="cont_i">
+                H
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cont_right">
+
+            <div class="cont_ul">
+              <ul>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+              </ul>
+            </div>
+
+            <div class="cont_ul">
+              <ul>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+              </ul>
+            </div>
+
+            <div class="cont_ul">
+              <ul>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+              </ul>
+            </div>
+
           </div>
 
         </div>
 
-      </div>
+        <div class="foot_sec_section">
+          <div class="foot_small_cont">
+          </div>
+          <div class="foot_small_cont">
+          </div>
+          <div class="foot_small_cont">
+          </div>
 
-      <div class="foot_sec_section">
-        <div class="foot_small_cont">
-        </div>
-        <div class="foot_small_cont">
-        </div>
-        <div class="foot_small_cont">
         </div>
 
-      </div>
+      </footer>
 
-    </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="./dist/js/master.js" charset="utf-8"></script>
+    <script src="./dist/js/main.js" charset="utf-8"></script>
   </body>
 </html>

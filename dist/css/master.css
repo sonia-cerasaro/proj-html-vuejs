@@ -33,6 +33,10 @@ div.telephone_number_cont p {
   margin-top: 15px;
 }
 
+.active {
+  color: #f76210;
+}
+
 .my_button {
   font-size: 0.9em;
   padding: 10px 35px;
