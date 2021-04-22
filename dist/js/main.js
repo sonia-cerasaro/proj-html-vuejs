@@ -11,26 +11,29 @@ var vue = new Vue({
   el: '#root',
   data: {
     index: 0,
-    currentLink: "href=\"#\"",
-    //bind all'href di li
     navContacts: [{
-      name: 'Home'
+      name: 'Home',
+      link: 'https://avada.theme-fusion.com/marketing-consultant/case-studies/'
     }, {
-      name: 'Service'
+      name: 'Service',
+      link: 'https://avada.theme-fusion.com/marketing-consultant/case-studies/'
     }, {
-      name: 'Why Us'
+      name: 'Why Us',
+      link: 'https://avada.theme-fusion.com/marketing-consultant/case-studies/'
     }, {
-      name: 'Case Studies'
+      name: 'Case Studies',
+      link: 'https://avada.theme-fusion.com/marketing-consultant/case-studies/'
     }, {
-      name: 'About'
+      name: 'About',
+      link: 'https://avada.theme-fusion.com/marketing-consultant/case-studies/'
     }, {
-      name: 'Blog'
+      name: 'Blog',
+      link: 'https://avada.theme-fusion.com/marketing-consultant/case-studies/'
     }]
   },
   methods: {
     onSelectedContact: function onSelectedContact() {
       var currentContact = this.navContacts[this.index];
-      this.currentLink = 'href="#"';
     }
   }
 });

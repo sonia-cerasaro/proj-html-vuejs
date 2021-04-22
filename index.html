@@ -25,13 +25,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto my_nav_ul">
                 <li class="nav-item"
-                v-for="contact in navContacts"
-                v-on:click="onSelectedContact()">
-                  <a class="nav-link" href="#">
+                v-for="contact in navContacts">
+                  <a class="nav-link" :href="`${contact.link}`">
                     {{ contact.name }}
                   </a>
                 </li>
-        
               </ul>
 
               <form class="form-inline my-2 my-lg-0">
