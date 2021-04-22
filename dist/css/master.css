@@ -7,17 +7,64 @@
   list-style: none;
 }
 
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #f76210;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #424242;
+}
+
 .jumbotron {
   margin-bottom: 0;
 }
 
+div.telephone_number_cont {
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+div.telephone_number_cont i {
+  color: #f76210;
+  padding-right: 10px;
+}
+div.telephone_number_cont p {
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+.my_button {
+  font-size: 0.9em;
+  padding: 10px 35px;
+  border-radius: 7px;
+}
+
+.btn-outline-success {
+  color: #f76210;
+  background-color: rgba(247, 98, 16, 0.2);
+  border: transparent;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #f76210;
+  border-color: #f76210;
+}
+
 header div.nav_container {
   width: 100vw;
-  background-color: lightblue;
 }
 header div.nav_container nav.my_nav {
   width: 80%;
   margin: 0 auto;
+  font-size: 0.9em;
+}
+header div.nav_container nav.my_nav a img {
+  width: 175px;
+}
+
+ul.my_nav_ul li {
+  margin-left: 20px;
 }
 
 .jumbotron div.jumbo_container {

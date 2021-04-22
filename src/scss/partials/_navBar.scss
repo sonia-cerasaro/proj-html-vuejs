@@ -2,13 +2,26 @@ header {
   div {
     &.nav_container {
       width: 100vw;
-      background-color: lightblue;
       nav {
         &.my_nav {
           width: 80%;
           margin: 0 auto;
+          font-size: 0.9em;
+          a {
+            img {
+              width: 175px;
+            }
+          }
         }
       }
+    }
+  }
+}
+ul {
+  &.my_nav_ul {
+    li {
+      margin-left: 20px;
+
     }
   }
 }

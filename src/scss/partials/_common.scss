@@ -1,3 +1,52 @@
+// bootstrap change
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: $red-light;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $grey-dark;
+}
+
 .jumbotron {
   margin-bottom: 0;
+}
+
+
+// Phone
+
+div {
+  &.telephone_number_cont {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    i {
+      color: $red-light;
+      padding-right: 10px;
+    }
+    p {
+      font-size: 0.9em;
+      margin-top: 15px;
+    }
+  }
+}
+
+// button
+
+.my_button {
+  font-size: 0.9em;
+  padding: 10px 35px;
+  border-radius: 7px;
+}
+
+.btn-outline-success {
+  color: $red-light;
+  background-color: rgba(247, 98, 16, 0.2);
+  border: transparent;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: $red-light;
+    border-color: $red-light;
 }
