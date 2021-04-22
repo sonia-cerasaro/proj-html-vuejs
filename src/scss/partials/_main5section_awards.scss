@@ -1,0 +1,22 @@
+section {
+  &.secttion_five {
+    width: 100vw;
+    height: 50vh;
+    background-color: lightgrey;
+    div {
+      &.woman_container {
+        @include container-center;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        div {
+          &.cards_container_woman {
+            width: calc(100% / 2 - 30px);
+            height: 100%;
+            border: black solid 1px;
+          }
+        }
+      }
+    }
+  }
+}

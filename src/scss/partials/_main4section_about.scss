@@ -1,7 +1,7 @@
 section {
   &.section_four {
     width: 100vw;
-    height: 95vh;
+    height: 140vh;
     background-color: lightblue;
     div {
       &.about_container {
@@ -19,5 +19,29 @@ section {
         }
       }
     }
+  }
+}
+div {
+  &.title_awards {
+    @include container-center;
+  }
+}
+div {
+  &.container_awards {
+    @include container-center;
+    height: 200px;
+    display: flex;
+    div {
+      &.cont_winner {
+        width: calc(100% / 4);
+        height: 100%;
+        border: solid black 1px;
+      }
+    }
+  }
+}
+div {
+  &.container_awards {
+    @include container-center;
   }
 }

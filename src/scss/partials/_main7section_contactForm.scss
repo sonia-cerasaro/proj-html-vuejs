@@ -1,0 +1,31 @@
+section {
+  &.section_seven {
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+    div {
+      &.center_container {
+        @include container-center;
+        height: 100%;
+        display: flex;
+        div {
+          &.contact_container {
+            width: calc(100% / 2);
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+div {
+  &.contact_container {
+    div {
+      &.form {
+        width: 70%;
+        height: 90%;
+        background-color: black;
+      }
+    }
+  }
+}
