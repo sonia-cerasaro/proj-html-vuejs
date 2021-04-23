@@ -270,27 +270,17 @@
         <div class="foot_first_section">
 
           <div class="cont_left">
-            <p>Lorem ipsum dolor sit amet, consectetur</p>
-            <div class="cont_social">
-              <div class="cont_i">
-                H
-              </div>
-              <div class="cont_i">
-                H
-              </div>
-              <div class="cont_i">
-                H
-              </div>
-              <div class="cont_i">
-                H
-              </div>
-              <div class="cont_i">
-                H
-              </div>
-              <div class="cont_i">
-                H
-              </div>
+            <h5 class="line_height">Grown Your Online Business Strategically,
+            and Improve<br>CostumerRetention.
+            </h5>
 
+            <div class="cont_social">
+              <div class="cont_i"
+              v-for="icon in icons">
+                <a href="#">
+                  <i v-bind:class="`fab fa-${icon.name}`"></i>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -298,31 +288,31 @@
 
             <div class="cont_ul">
               <ul>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
+                <li v-for="service in services">
+                  <a :href="`${service.link}`">
+                    {{ service.name }}
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div class="cont_ul">
               <ul>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
+                <li v-for="resource in resources">
+                  <a :href="`${resource.link}`">
+                    {{ resource.name }}
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div class="cont_ul">
               <ul>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
+                <li v-for="company in companies">
+                  <a :href="`${company.link}`">
+                    {{ company.name }}
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -332,10 +322,13 @@
 
         <div class="foot_sec_section">
           <div class="foot_small_cont">
+            © 2020 • Avada Consultant • Powered by WordPress
           </div>
           <div class="foot_small_cont">
+            Call Us (555) 802-1234
           </div>
           <div class="foot_small_cont">
+            info@yourcompany.com
           </div>
 
         </div>

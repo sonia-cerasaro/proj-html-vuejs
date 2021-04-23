@@ -15,6 +15,11 @@
   color: #424242;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f76210;
+  border-bottom: #f76210 solid 1px;
+}
+
 .jumbotron {
   margin-bottom: 0;
 }
@@ -31,10 +36,6 @@ div.telephone_number_cont i {
 div.telephone_number_cont p {
   font-size: 0.9em;
   margin-top: 15px;
-}
-
-.active {
-  color: #f76210;
 }
 
 .my_button {
@@ -55,6 +56,10 @@ div.telephone_number_cont p {
   border-color: #f76210;
 }
 
+.line_height {
+  line-height: 1.5;
+}
+
 header div.nav_container {
   width: 100vw;
 }
@@ -69,6 +74,9 @@ header div.nav_container nav.my_nav a img {
 
 ul.my_nav_ul li {
   margin-left: 20px;
+}
+ul.my_nav_ul li:hover {
+  color: #f76210;
 }
 
 .jumbotron div.jumbo_container {
@@ -102,12 +110,12 @@ section.section_two {
   background-color: lightblue;
 }
 section.section_two div.brands_title {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
 div.brands_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 50px;
   display: flex;
@@ -119,7 +127,7 @@ div.brands_container div.brand_box {
 }
 
 div.brands_reference {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 50px;
   display: flex;
@@ -140,11 +148,11 @@ section.section_three {
   background-color: lightgrey;
 }
 section.section_three div.container_title {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 section.section_three div.cards_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 400px;
   display: flex;
@@ -156,7 +164,7 @@ section.section_three div.cards_container div.cards {
   border: black solid 1px;
 }
 section.section_three div.container_button {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -166,7 +174,7 @@ section.section_four {
   background-color: lightblue;
 }
 section.section_four div.about_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 80%;
 }
@@ -179,12 +187,12 @@ section.section_four div.about_container div.square_card {
 }
 
 div.title_awards {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
 div.container_awards {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 200px;
   display: flex;
@@ -196,7 +204,7 @@ div.container_awards div.cont_winner {
 }
 
 div.container_awards {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -206,7 +214,7 @@ section.secttion_five {
   background-color: lightgrey;
 }
 section.secttion_five div.woman_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 400px;
   display: flex;
@@ -224,7 +232,7 @@ section.section_six {
   background-color: lightblue;
 }
 section.section_six div.market_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 50%;
   display: flex;
@@ -237,7 +245,7 @@ section.section_six div.market_container div.elements_cont {
 }
 
 div.blog_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 50%;
   display: flex;
@@ -255,7 +263,7 @@ section.section_seven {
   background-color: #fff;
 }
 section.section_seven div.center_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -274,17 +282,19 @@ div.contact_container div.form {
 footer {
   width: 100vw;
   height: 50vh;
-  background-color: lightgrey;
 }
 footer div.foot_first_section {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 70%;
   display: flex;
+  justify-content: space-between;
 }
 
 div.cont_left {
-  width: 30%;
+  width: 40%;
+  margin-top: 80px;
+  padding-right: 20px;
 }
 div.cont_left div.cont_social {
   width: 60%;
@@ -294,20 +304,51 @@ div.cont_left div.cont_social {
 div.cont_left div.cont_social div.cont_i {
   width: 20px;
   height: 20px;
-  background-color: lightblue;
+  margin-top: 20px;
+  position: relative;
+}
+div.cont_left div.cont_social div.cont_i a {
+  color: #000;
+}
+div.cont_left div.cont_social div.cont_i a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div.cont_left div.cont_social div.cont_i a:hover {
+  color: #f76210;
 }
 
 div.cont_right {
-  width: 70%;
+  width: 60%;
+  margin-top: 80px;
   display: flex;
+  justify-content: space-between;
 }
 div.cont_right div.cont_ul {
-  width: calc(100% / 3);
+  width: calc(90% / 3);
   height: 100%;
+}
+div.cont_right div.cont_ul ul {
+  font-size: 0.9em;
+}
+div.cont_right div.cont_ul ul li:first-child {
+  font-weight: bold;
+}
+div.cont_right div.cont_ul ul li {
+  margin-bottom: 12px;
+}
+div.cont_right div.cont_ul ul li a {
+  color: #000;
+  font-weight: lighter;
+}
+div.cont_right div.cont_ul ul li a:hover {
+  color: #f76210;
 }
 
 div.foot_sec_section {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 30%;
   display: flex;
@@ -315,5 +356,7 @@ div.foot_sec_section {
 div.foot_sec_section div.foot_small_cont {
   width: calc(100% / 3);
   height: 100%;
-  border: black solid 1px;
+  font-size: 0.8em;
+  text-align: right;
+  padding-top: 20px;
 }

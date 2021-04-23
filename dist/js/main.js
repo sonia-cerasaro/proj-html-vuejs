@@ -29,13 +29,73 @@ var vue = new Vue({
     }, {
       name: 'Blog',
       link: 'https://avada.theme-fusion.com/marketing-consultant/case-studies/'
+    }],
+    services: [{
+      name: 'Services',
+      link: 'https://avada.theme-fusion.com/marketing-consultant/case-studies/'
+    }, {
+      name: 'Marketing Plan',
+      link: ''
+    }, {
+      name: 'Sales Development',
+      link: ''
+    }, {
+      name: 'Digital Marketing',
+      link: ''
+    }, {
+      name: 'Pricing',
+      link: ''
+    }, {
+      name: 'Why Us',
+      link: ''
+    }],
+    resources: [{
+      name: 'Recources',
+      link: ''
+    }, {
+      name: 'Learning Center',
+      link: ''
+    }, {
+      name: 'Video tutorials',
+      link: ''
+    }, {
+      name: 'Customers',
+      link: ''
+    }, {
+      name: 'Blog',
+      link: ''
+    }],
+    companies: [{
+      name: 'Company',
+      link: ''
+    }, {
+      name: 'Who We Are',
+      link: ''
+    }, {
+      name: 'Contact Us',
+      link: ''
+    }, {
+      name: 'Careers',
+      link: ''
+    }],
+    icons: [{
+      name: 'facebook-f',
+      link: ''
+    }, {
+      name: 'twitter',
+      link: ''
+    }, {
+      name: 'youtube',
+      link: ''
+    }, {
+      name: 'linkedin-in',
+      link: ''
+    }, {
+      name: 'tiktok',
+      link: ''
     }]
   },
-  methods: {
-    onSelectedContact: function onSelectedContact() {
-      var currentContact = this.navContacts[this.index];
-    }
-  }
+  methods: {}
 });
 
 /***/ }),

@@ -8,6 +8,11 @@
     color: $grey-dark;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $red-light;
+    border-bottom: $red-light solid 1px;
+}
+
 .jumbotron {
   margin-bottom: 0;
 }
@@ -32,10 +37,6 @@ div {
 
 // button
 
-.active {
-  color: $red-light;
-}
-
 .my_button {
   font-size: 0.9em;
   padding: 10px 35px;
@@ -52,4 +53,10 @@ div {
     color: #fff;
     background-color: $red-light;
     border-color: $red-light;
+}
+
+// text
+
+.line_height {
+  line-height: 1.5;
 }
