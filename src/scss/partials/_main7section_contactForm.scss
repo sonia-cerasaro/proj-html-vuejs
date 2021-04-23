@@ -1,17 +1,23 @@
 section {
   &.section_seven {
     width: 100vw;
-    height: 50vh;
-    background-color: #fff;
+    height: 60vh;
+    background-color: $black;
     div {
       &.center_container {
         @include container-center;
         height: 100%;
         display: flex;
+        padding-top: 68px;
         div {
           &.contact_container {
             width: calc(100% / 2);
             height: 100%;
+            padding-right: 30px;
+            hr {
+              width: 100px;
+              border: $grey-opaque solid 1px;
+            }
           }
         }
       }
@@ -22,9 +28,9 @@ div {
   &.contact_container {
     div {
       &.form {
-        width: 70%;
-        height: 90%;
-        background-color: black;
+        width: 310px;
+        height: 450px;
+        margin-left: 50px;
       }
     }
   }

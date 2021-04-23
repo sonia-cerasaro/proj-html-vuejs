@@ -21,4 +21,9 @@
       }
     }
   }
+  div {
+    &.form_container {
+      @include transform-translate(59%, 72%);
+    }
+  }
 }

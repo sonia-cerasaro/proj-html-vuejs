@@ -35,6 +35,14 @@
   color: $red-light;
 }
 
+.color_white {
+  color: $white;
+}
+
+.color_lightgrey {
+  color: $grey-light;
+}
+
 
 // Phone
 
@@ -59,10 +67,9 @@ div {
 div {
   &.form_container {
     width: 310px;
-    height: 450px;
+    height: 440px;
     background-color: $white;
     position: absolute;
-    @include transform-translate(59%, 72%);
     z-index: 1;
     border-radius: 7px;
     box-shadow: 1px 0px 30px $grey-opaque;
@@ -161,6 +168,10 @@ div {
 
 .font_size {
   font-size: 0.9em;
+}
+
+.font_oblique {
+  font-style: oblique;
 }
 
 
