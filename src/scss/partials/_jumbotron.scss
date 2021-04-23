@@ -1,7 +1,9 @@
 .jumbotron {
   @include background-box;
+  background-position: left;
   position: relative;
   padding-bottom: 130px;
+  border-radius: 0;
   div {
     &.jumbo_container {
       width: 80%;
@@ -23,7 +25,16 @@
   }
   div {
     &.form_container {
-      @include transform-translate(59%, 72%);
+      @include transform-translate(59%, 70%);
+    }
+  }
+  div {
+    &.small_containers_container {
+      width: 50px;
+      height: 75px;
+      background-color: white;
+      @include transform-translate(11%, 97%);
+
     }
   }
 }
