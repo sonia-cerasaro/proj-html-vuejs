@@ -29,7 +29,15 @@
 }
 
 .color_grey {
+  color: #424242;
+}
+
+.color_normal_grey {
   color: #858786;
+}
+
+.color_red {
+  color: #f76210;
 }
 
 div.telephone_number_cont {
@@ -47,13 +55,13 @@ div.telephone_number_cont p {
 }
 
 div.form_container {
-  width: 300px;
-  height: 400px;
+  width: 310px;
+  height: 450px;
   background-color: #fff;
   position: absolute;
   position: absolute;
-  top: 65%;
-  left: 65%;
+  top: 59%;
+  left: 72%;
   transform: translate(-50%, -50%);
   z-index: 1;
   border-radius: 7px;
@@ -70,6 +78,28 @@ div.form_container div.img_cont img {
   width: 100%;
   border-radius: 50px;
 }
+div.form_container div.input_container {
+  margin-left: 20px;
+}
+div.form_container div.input_container input {
+  width: 92%;
+  font-size: 0.8em;
+  padding: 10px 10px;
+  border: #e3e4e2 solid 1px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.red_button {
+  width: 92%;
+  font-size: 0.8em;
+  padding: 10px 10px;
+  background-color: #f76210;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
 .my_button {
   font-size: 0.9em;
   padding: 10px 35px;
@@ -399,6 +429,7 @@ ul.my_nav_ul li:hover {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  padding-bottom: 130px;
 }
 .jumbotron div.jumbo_container {
   width: 80%;

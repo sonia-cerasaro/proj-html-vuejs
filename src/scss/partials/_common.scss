@@ -24,7 +24,15 @@
 }
 
 .color_grey {
+  color: $grey-dark;
+}
+
+.color_normal_grey {
   color: $grey-opaque;
+}
+
+.color_red {
+  color: $red-light;
 }
 
 
@@ -50,11 +58,11 @@ div {
 
 div {
   &.form_container {
-    width: 300px;
-    height: 400px;
+    width: 310px;
+    height: 450px;
     background-color: $white;
     position: absolute;
-    @include transform-translate(65%, 65%);
+    @include transform-translate(59%, 72%);
     z-index: 1;
     border-radius: 7px;
     box-shadow: 1px 0px 30px $grey-opaque;
@@ -73,13 +81,31 @@ div {
     }
     div {
       &.input_container {
-
+        margin-left: 20px;
+        input {
+          width: 92%;
+          font-size: 0.8em;
+          padding: 10px 10px;
+          border: $grey-light solid 1px;
+          border-radius: 7px;
+          margin-bottom: 10px;
+        }
       }
     }
   }
 }
 
 // button
+
+.red_button {
+  width: 92%;
+  font-size: 0.8em;
+  padding: 10px 10px;
+  background-color: $red-light;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  color: $white;
+}
 
 .my_button {
   font-size: 0.9em;

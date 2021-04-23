@@ -1,6 +1,7 @@
 .jumbotron {
   @include background-box;
   position: relative;
+  padding-bottom: 130px;
   div {
     &.jumbo_container {
       width: 80%;
