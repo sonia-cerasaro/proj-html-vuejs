@@ -1,11 +1,21 @@
 .jumbotron {
+  @include background-box;
+  position: relative;
   div {
     &.jumbo_container {
       width: 80%;
       margin: 0 auto;
       div {
         &.jumbo_contents {
+          color: $white;
           width: 55%;
+          button {
+            margin-top: 15px;
+            font-size: 15px;
+            i {
+              margin-left: 5px;
+            }
+          }
         }
       }
     }

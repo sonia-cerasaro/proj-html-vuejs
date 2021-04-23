@@ -27,7 +27,7 @@ div {
             a {
               color: $black;
               i {
-                @include transform-translate;
+                @include transform-translate(50%, 50%);
                 }
               }
               a:hover {

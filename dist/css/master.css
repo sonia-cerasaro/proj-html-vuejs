@@ -24,6 +24,14 @@
   margin-bottom: 0;
 }
 
+.backg_white {
+  background-color: #fff;
+}
+
+.color_grey {
+  color: #858786;
+}
+
 div.telephone_number_cont {
   width: 140px;
   display: flex;
@@ -38,6 +46,30 @@ div.telephone_number_cont p {
   margin-top: 15px;
 }
 
+div.form_container {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 65%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 7px;
+  box-shadow: 1px 0px 30px #858786;
+}
+div.form_container div.img_cont {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+div.form_container div.img_cont img {
+  width: 100%;
+  border-radius: 50px;
+}
 .my_button {
   font-size: 0.9em;
   padding: 10px 35px;
@@ -56,8 +88,292 @@ div.telephone_number_cont p {
   border-color: #f76210;
 }
 
+.auto_center {
+  margin: 0 auto;
+}
+
+.text_size_extraSmall {
+  font-size: 0.6em;
+}
+
+.text_size_small {
+  font-size: 0.9em;
+}
+
+.text_size_normal {
+  font-size: 1.2em;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.text_light {
+  font-weight: lighter;
+}
+
 .line_height {
   line-height: 1.5;
+}
+
+.font_size {
+  font-size: 0.9em;
+}
+
+.background_jambo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/marketing-intro.jpg");
+}
+
+.mt_1 {
+  margin-top: 10px;
+}
+
+.mt_2 {
+  margin-top: 20px;
+}
+
+.mt_3 {
+  margin-top: 30px;
+}
+
+.mt_4 {
+  margin-top: 40px;
+}
+
+.mt_5 {
+  margin-top: 50px;
+}
+
+.mt_6 {
+  margin-top: 60px;
+}
+
+.mt_7 {
+  margin-top: 70px;
+}
+
+.pt_1 {
+  padding-top: 10px;
+}
+
+.pt_2 {
+  padding-top: 20px;
+}
+
+.pt_3 {
+  padding-top: 30px;
+}
+
+.pt_4 {
+  padding-top: 40px;
+}
+
+.pt_5 {
+  padding-top: 50px;
+}
+
+.pt_6 {
+  padding-top: 60px;
+}
+
+.pt_7 {
+  padding-top: 70px;
+}
+
+.mb_1 {
+  margin-bottom: 5px;
+}
+
+.mb_2 {
+  margin-bottom: 10px;
+}
+
+.mb_3 {
+  margin-bottom: 15px;
+}
+
+.mb_4 {
+  margin-bottom: 20px;
+}
+
+.mb_5 {
+  margin-bottom: 25px;
+}
+
+.mb_6 {
+  margin-bottom: 30px;
+}
+
+.mb_7 {
+  margin-bottom: 35px;
+}
+
+.mb_8 {
+  margin-bottom: 40px;
+}
+
+.mb_9 {
+  margin-bottom: 45px;
+}
+
+.mb_10 {
+  margin-bottom: 50px;
+}
+
+.pb_1 {
+  padding-bottom: 5px;
+}
+
+.pb_2 {
+  padding-bottom: 10px;
+}
+
+.pb_3 {
+  padding-bottom: 15px;
+}
+
+.pb_4 {
+  padding-bottom: 20px;
+}
+
+.pb_5 {
+  padding-bottom: 25px;
+}
+
+.pb_6 {
+  padding-bottom: 30px;
+}
+
+.pb_7 {
+  padding-bottom: 35px;
+}
+
+.pb_8 {
+  padding-bottom: 40px;
+}
+
+.pb_9 {
+  padding-bottom: 45px;
+}
+
+.pb_10 {
+  padding-bottom: 50px;
+}
+
+.ml_1 {
+  margin-left: 5px;
+}
+
+.ml_2 {
+  margin-left: 10px;
+}
+
+.ml_3 {
+  margin-left: 15px;
+}
+
+.ml_4 {
+  margin-left: 20px;
+}
+
+.ml_5 {
+  margin-left: 25px;
+}
+
+.ml_6 {
+  margin-left: 30px;
+}
+
+.ml_7 {
+  margin-left: 35px;
+}
+
+.pl_1 {
+  padding-left: 5px;
+}
+
+.pl_2 {
+  padding-left: 10px;
+}
+
+.pl_3 {
+  padding-left: 15px;
+}
+
+.pl_4 {
+  padding-left: 20px;
+}
+
+.pl_5 {
+  padding-left: 25px;
+}
+
+.pl_6 {
+  padding-left: 30px;
+}
+
+.pl_7 {
+  padding-left: 35px;
+}
+
+.mr_1 {
+  margin-right: 5px;
+}
+
+.mr_2 {
+  margin-right: 10px;
+}
+
+.mr_3 {
+  margin-right: 15px;
+}
+
+.mr_4 {
+  margin-right: 20px;
+}
+
+.mr_5 {
+  margin-right: 25px;
+}
+
+.mr_6 {
+  margin-right: 30px;
+}
+
+.mr_7 {
+  margin-right: 35px;
+}
+
+.pr_1 {
+  padding-right: 5px;
+}
+
+.pr_2 {
+  padding-right: 10px;
+}
+
+.pr_3 {
+  padding-right: 15px;
+}
+
+.pr_4 {
+  padding-right: 20px;
+}
+
+.pr_5 {
+  padding-right: 25px;
+}
+
+.pr_6 {
+  padding-right: 30px;
+}
+
+.pr_7 {
+  padding-right: 35px;
 }
 
 header div.nav_container {
@@ -79,12 +395,25 @@ ul.my_nav_ul li:hover {
   color: #f76210;
 }
 
+.jumbotron {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
 .jumbotron div.jumbo_container {
   width: 80%;
   margin: 0 auto;
 }
 .jumbotron div.jumbo_container div.jumbo_contents {
+  color: #fff;
   width: 55%;
+}
+.jumbotron div.jumbo_container div.jumbo_contents button {
+  margin-top: 15px;
+  font-size: 15px;
+}
+.jumbotron div.jumbo_container div.jumbo_contents button i {
+  margin-left: 5px;
 }
 
 section.section_one {

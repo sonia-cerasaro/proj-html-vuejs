@@ -3,14 +3,25 @@
   margin: 0 auto;
 }
 
-@mixin transform-translate {
+@mixin transform-translate ($top, $left) {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: #{$top};
+  left: #{$left};
   transform: translate(-50%, -50%);
 }
 
 @mixin flex {
   display: flex;
   justify-content: space-between;
+}
+
+@mixin background-box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin clearfix {
+  clear: both;
+  content: '';
+  display: table;
 }

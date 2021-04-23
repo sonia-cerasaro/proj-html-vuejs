@@ -17,6 +17,17 @@
   margin-bottom: 0;
 }
 
+//colors + opacity
+
+.backg_white {
+  background-color: $white;
+}
+
+.color_grey {
+  color: $grey-opaque;
+}
+
+
 // Phone
 
 div {
@@ -31,6 +42,39 @@ div {
     p {
       font-size: 0.9em;
       margin-top: 15px;
+    }
+  }
+}
+
+//contact form
+
+div {
+  &.form_container {
+    width: 300px;
+    height: 400px;
+    background-color: $white;
+    position: absolute;
+    @include transform-translate(65%, 65%);
+    z-index: 1;
+    border-radius: 7px;
+    box-shadow: 1px 0px 30px $grey-opaque;
+    div {
+      &.img_cont {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        img {
+          width: 100%;
+          border-radius: 50px;
+        }
+      }
+    }
+    div {
+      &.input_container {
+
+      }
     }
   }
 }
@@ -55,8 +99,107 @@ div {
     border-color: $red-light;
 }
 
-// text
+// text & margin 0 auto
+
+.auto_center {
+  margin: 0 auto;
+}
+
+.text_size_extraSmall {
+  font-size: 0.6em;
+}
+
+.text_size_small {
+  font-size: 0.9em;
+}
+
+.text_size_normal {
+  font-size: 1.2em;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.text_light {
+  font-weight: lighter;
+}
 
 .line_height {
   line-height: 1.5;
+}
+
+.font_size {
+  font-size: 0.9em;
+}
+
+
+//background
+
+.background_jambo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/marketing-intro.jpg');
+}
+
+//margin/padding-top 10-70px
+
+$types: m, p;
+@each $type in $types {
+  @for $i from 1 through 7 {
+    .#{$type}t_#{$i} {
+      @if $type == m {
+        margin-top: 10px * $i;
+      } @else {
+        padding-top: 10px * $i;
+      }
+    }
+  }
+}
+
+//margin/padding-bottom 5-50px
+
+$types: m, p;
+@each $type in $types {
+  @for $i from 1 through 10 {
+    .#{$type}b_#{$i} {
+      @if $type == m {
+        margin-bottom: 5px * $i;
+      } @else {
+        padding-bottom: 5px * $i;
+      }
+    }
+  }
+}
+
+//margin/padding-left 5-35px
+
+$types: m, p;
+@each $type in $types {
+  @for $i from 1 through 7 {
+    .#{$type}l_#{$i} {
+      @if $type == m {
+        margin-left: 5px * $i;
+      } @else {
+        padding-left: 5px * $i;
+      }
+    }
+  }
+}
+
+//margin/padding-right 5-35px
+
+$types: m, p;
+@each $type in $types {
+  @for $i from 1 through 7 {
+    .#{$type}r_#{$i} {
+      @if $type == m {
+        margin-right: 5px * $i;
+      } @else {
+        padding-right: 5px * $i;
+      }
+    }
+  }
 }
