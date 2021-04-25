@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   border: 0;
   margin: 0;
@@ -24,12 +25,32 @@ html {
   border-bottom: #f76210 solid 1px;
 }
 
+section.section_one div.section_container div.card {
+  border: transparent;
+}
+
 .jumbotron {
   margin-bottom: 0;
 }
 
 .backg_white {
   background-color: #fff;
+}
+
+.backg_blue {
+  background-color: #223bcb;
+}
+
+.backg_lime_green {
+  background-color: #88EF37;
+}
+
+.backg_green {
+  background-color: #38c3a0;
+}
+
+.backg_turqu {
+  background-color: #30cfc3;
 }
 
 .color_grey {
@@ -50,6 +71,10 @@ html {
 
 .color_lightgrey {
   color: #ceccc8;
+}
+
+.color_green {
+  color: #38c3a0;
 }
 
 div.telephone_number_cont {
@@ -73,7 +98,6 @@ div.form_container {
   position: absolute;
   z-index: 1;
   border-radius: 7px;
-  box-shadow: 1px 0px 30px #858786;
 }
 div.form_container div.img_cont {
   width: 60px;
@@ -99,7 +123,6 @@ div.form_container div.input_container input {
 }
 
 .red_button {
-  width: 92%;
   font-size: 0.8em;
   padding: 10px 10px;
   background-color: #f76210;
@@ -446,7 +469,7 @@ ul.my_nav_ul li:hover {
   border-radius: 0;
 }
 .jumbotron div.jumbo_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .jumbotron div.jumbo_container div.jumbo_contents {
@@ -465,32 +488,139 @@ ul.my_nav_ul li:hover {
   top: 59%;
   left: 70%;
   transform: translate(-50%, -50%);
+  box-shadow: 1px 0px 30px #858786;
+}
+.jumbotron div.form_container div.input_container button.red_button {
+  width: 92%;
 }
 .jumbotron div.small_containers_container {
   width: 50px;
-  height: 75px;
-  background-color: white;
+  height: 100px;
   position: absolute;
   top: 11%;
   left: 97%;
   transform: translate(-50%, -50%);
 }
+.jumbotron div.small_containers_container div.demo {
+  width: 105%;
+  height: 55%;
+  border: black solid 1px;
+  margin-bottom: 3px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+.jumbotron div.small_containers_container div.demo img {
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.jumbotron div.small_containers_container div.sale {
+  width: 105%;
+  height: 55%;
+  border: black solid 1px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+.jumbotron div.small_containers_container div.sale span.dollar {
+  font-size: 0.8em;
+  position: relative;
+  top: -7px;
+  left: 8px;
+}
+.jumbotron div.small_containers_container div.sale span.number {
+  font-size: 1.4em;
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
 
 section.section_one {
   width: 100vw;
-  height: 108vh;
+  height: 160vh;
 }
 section.section_one div.section_container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  border: black solid 1px;
 }
 section.section_one div.section_container div.card {
   width: 50%;
   height: 350px;
   display: inline-block;
   float: right;
-  border: black solid 1px;
+}
+section.section_one div.section_container div.card div.card_cont_cont {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+section.section_one div.section_container div.card div.card_cont_cont .little_icon_cont {
+  margin-bottom: 11px;
+}
+section.section_one div.section_container div.card div.card_cont_cont .little_icon_cont div.sphere {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: inline-block;
+  position: absolute;
+}
+section.section_one div.section_container div.card div.card_cont_cont .little_icon_cont div.sphere:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.6em;
+}
+section.section_one div.section_container div.card div.card_cont_cont .little_icon_cont div.bus_text {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: 38px;
+}
+section.section_one div.section_container div.card div.card_cont_cont button.red_button {
+  width: 50%;
+}
+
+div.card.image div.blue-sphere {
+  width: 250px;
+  height: 260px;
+  border-radius: 50%;
+  position: relative;
+  top: 13%;
+  right: -29%;
+}
+div.card.image div.image_panel_cont {
+  width: 150px;
+  height: 150px;
+}
+div.card.image div.image_panel_cont img.my_panel {
+  width: 150%;
+  position: relative;
+  top: -128%;
+  right: -96%;
+}
+div.card.image div.image_panel_small_cont {
+  width: 150px;
+  height: 150px;
+}
+div.card.image div.image_panel_small_cont img.my_small_panel {
+  width: 140%;
+  position: relative;
+  top: -140%;
+  right: -86%;
+}
+div.card.image div.image_cont {
+  width: 210px;
+  height: 210px;
+}
+div.card.image div.image_cont img.my_image {
+  width: 150%;
+  position: relative;
+  top: -269%;
+  right: -27%;
 }
 
 section.section_two {
@@ -672,6 +802,9 @@ div.contact_container div.form {
   width: 310px;
   height: 450px;
   margin-left: 50px;
+}
+div.contact_container div.form div.input_container button.red_button {
+  width: 92%;
 }
 
 footer {

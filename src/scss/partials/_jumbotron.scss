@@ -6,8 +6,7 @@
   border-radius: 0;
   div {
     &.jumbo_container {
-      width: 80%;
-      margin: 0 auto;
+      @include container-center;
       div {
         &.jumbo_contents {
           color: $white;
@@ -26,15 +25,60 @@
   div {
     &.form_container {
       @include transform-translate(59%, 70%);
+      box-shadow: 1px 0px 30px $grey-opaque;
+      div {
+        &.input_container {
+          button {
+            &.red_button {
+              @include width(92%);
+            }
+          }
+        }
+      }
     }
   }
   div {
     &.small_containers_container {
-      width: 50px;
-      height: 75px;
-      background-color: white;
+      @include width-height(50px, 100px);
       @include transform-translate(11%, 97%);
-
+      div {
+        &.demo {
+          @include width-height(105%, 55%);
+          border: black solid 1px;
+          margin-bottom: 3px;
+          background-color: $white;
+          border-radius: 7px;
+          img {
+            width: 100%;
+            border-radius: 50%;
+            margin-top: 5px;
+          }
+        }
+      }
+      div {
+        &.sale {
+          @include width-height(105%, 55%);
+          border: black solid 1px;
+          background-color: $white;
+          border-radius: 7px;
+          span {
+            &.dollar {
+              font-size: 0.8em;
+              position: relative;
+              top: -7px;
+              left: 8px;
+            }
+          }
+          span {
+            &.number {
+              font-size: 1.4em;
+              position: relative;
+              top: 3px;
+              left: 5px;
+            }
+          }
+        }
+      }
     }
   }
 }

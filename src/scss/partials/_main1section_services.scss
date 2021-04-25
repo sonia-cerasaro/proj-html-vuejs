@@ -1,19 +1,104 @@
 section {
   &.section_one {
-    width: 100vw;
-    height: 108vh;
+    @include width-height(100vw, 160vh);
     div {
       &.section_container {
-        width: 80%;
-        margin: 0 auto;
-        border: black solid 1px;
+        @include container-center;
         div {
           &.card {
-            width: 50%;
-            height: 350px;
+            @include width-height(50%, 350px);
             display: inline-block;
             float: right;
-            border: black solid 1px;
+            div {
+              &.card_cont_cont {
+                @include container-center;
+                margin-top: 50px;
+                .little_icon_cont {
+                    margin-bottom: 11px;
+                  div {
+                    &.sphere {
+                      @include width-height(30px, 30px);
+                      border-radius: 50px;
+                      display: inline-block;
+                      position: absolute;
+                    }
+                    &.sphere:before {
+                      content: "\f127";
+                      font-family: 'Font Awesome 5 Free';
+                      font-weight: 700;
+                      color: $white;
+                      @include transform-translate(50%, 50%);
+                      font-size: 0.6em;
+                    }
+                  }
+                  div {
+                    &.bus_text {
+                      display: inline-block;
+                      position: relative;
+                      top: 3px;
+                      left: 38px;
+                    }
+                  }
+                }
+                button {
+                  &.red_button {
+                    @include width(50%);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+div {
+  &.card.image {
+    div {
+      &.blue-sphere {
+        @include width-height(250px, 260px);
+        border-radius: 50%;
+        position: relative;
+        top: 13%;
+        right: -29%;
+      }
+    }
+    div {
+      &.image_panel_cont {
+        @include width-height(150px, 150px);
+        img {
+          &.my_panel {
+            width: 150%;
+            position: relative;
+            top: -128%;
+            right: -96%;
+          }
+        }
+      }
+    }
+    div {
+      &.image_panel_small_cont {
+        @include width-height(150px, 150px);
+        img {
+          &.my_small_panel {
+            width: 140%;
+            position: relative;
+            top: -140%;
+            right: -86%;
+          }
+        }
+      }
+    }
+    div {
+      &.image_cont {
+        @include width-height(210px, 210px);
+        img {
+          &.my_image {
+            width: 150%;
+            position: relative;
+            top: -269%;
+            right: -27%;
           }
         }
       }

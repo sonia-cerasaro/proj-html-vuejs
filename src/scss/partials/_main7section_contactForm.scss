@@ -31,6 +31,15 @@ div {
         width: 310px;
         height: 450px;
         margin-left: 50px;
+        div {
+          &.input_container {
+            button {
+              &.red_button {
+                @include width(92%);
+              }
+            }
+          }
+        }
       }
     }
   }

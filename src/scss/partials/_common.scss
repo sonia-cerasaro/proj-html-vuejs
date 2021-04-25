@@ -13,6 +13,10 @@
     border-bottom: $red-light solid 1px;
 }
 
+section.section_one div.section_container div.card {
+  border: transparent;
+}
+
 .jumbotron {
   margin-bottom: 0;
 }
@@ -21,6 +25,22 @@
 
 .backg_white {
   background-color: $white;
+}
+
+.backg_blue {
+  background-color: $blue-persian;
+}
+
+.backg_lime_green {
+  background-color: $lime-green;
+}
+
+.backg_green {
+  background-color: $green;
+}
+
+.backg_turqu {
+  background-color: $turqueise;
 }
 
 .color_grey {
@@ -41,6 +61,10 @@
 
 .color_lightgrey {
   color: $grey-light;
+}
+
+.color_green {
+  color: $green;
 }
 
 
@@ -72,7 +96,6 @@ div {
     position: absolute;
     z-index: 1;
     border-radius: 7px;
-    box-shadow: 1px 0px 30px $grey-opaque;
     div {
       &.img_cont {
         width: 60px;
@@ -105,7 +128,6 @@ div {
 // button
 
 .red_button {
-  width: 92%;
   font-size: 0.8em;
   padding: 10px 10px;
   background-color: $red-light;
