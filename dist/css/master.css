@@ -485,7 +485,7 @@ ul.my_nav_ul li:hover {
 }
 .jumbotron div.form_container {
   position: absolute;
-  top: 59%;
+  top: 65%;
   left: 70%;
   transform: translate(-50%, -50%);
   box-shadow: 1px 0px 30px #858786;
@@ -536,7 +536,7 @@ ul.my_nav_ul li:hover {
 
 section.section_one {
   width: 100vw;
-  height: 160vh;
+  height: 125vh;
 }
 section.section_one div.section_container {
   width: 70%;
@@ -621,6 +621,70 @@ div.card.image div.image_cont img.my_image {
   position: relative;
   top: -269%;
   right: -27%;
+}
+
+div.card.image div.blue-sphere.yellow img {
+  width: 150%;
+  position: relative;
+  top: -14%;
+  right: 50%;
+}
+div.card.image div.image_panel_cont.yellow {
+  width: 150px;
+  height: 150px;
+}
+div.card.image div.image_panel_cont.yellow img.my_panel {
+  width: 135%;
+  position: relative;
+  top: -134%;
+  right: -65%;
+}
+div.card.image div.image_cont.woman-yellow {
+  width: 210px;
+  height: 210px;
+}
+div.card.image div.image_cont.woman-yellow img.my_image {
+  width: 97%;
+  position: relative;
+  top: -148%;
+  right: -70%;
+}
+
+div.card.image div.blue-sphere.green img {
+  width: 89%;
+  position: relative;
+  top: -11%;
+  right: 0%;
+}
+div.card.image div.image_panel_cont.green {
+  width: 150px;
+  height: 150px;
+}
+div.card.image div.image_panel_cont.green img.my_panel {
+  width: 135%;
+  position: relative;
+  top: -109%;
+  right: -112%;
+}
+div.card.image div.image_panel_small_cont.green {
+  width: 150px;
+  height: 150px;
+}
+div.card.image div.image_panel_small_cont.green img.my_small_panel {
+  width: 71%;
+  position: relative;
+  top: -131%;
+  right: -148%;
+}
+div.card.image div.image_cont.man-green {
+  width: 210px;
+  height: 210px;
+}
+div.card.image div.image_cont.man-green img.my_image {
+  width: 97%;
+  position: relative;
+  top: -249%;
+  right: -25%;
 }
 
 section.section_two {

@@ -24,7 +24,7 @@
   }
   div {
     &.form_container {
-      @include transform-translate(59%, 70%);
+      @include transform-translate(65%, 70%);
       box-shadow: 1px 0px 30px $grey-opaque;
       div {
         &.input_container {

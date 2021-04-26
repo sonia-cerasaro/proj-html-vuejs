@@ -1,6 +1,6 @@
 section {
   &.section_one {
-    @include width-height(100vw, 160vh);
+    @include width-height(100vw, 125vh);
     div {
       &.section_container {
         @include container-center;
@@ -99,6 +99,99 @@ div {
             position: relative;
             top: -269%;
             right: -27%;
+          }
+        }
+      }
+    }
+  }
+}
+div {
+  &.card.image {
+    div {
+      &.blue-sphere.yellow {
+        img {
+          width: 150%;
+          position: relative;
+          top: -14%;
+          right: 50%;
+        }
+      }
+    }
+    div {
+      &.image_panel_cont.yellow {
+        @include width-height(150px, 150px);
+        img {
+          &.my_panel {
+            width: 135%;
+            position: relative;
+            top: -134%;
+            right: -65%;
+          }
+        }
+      }
+    }
+    div {
+      &.image_cont.woman-yellow {
+        @include width-height(210px, 210px);
+        img {
+          &.my_image {
+            width: 97%;
+            position: relative;
+            top: -148%;
+            right: -70%;
+          }
+        }
+      }
+    }
+  }
+}
+div {
+  &.card.image {
+    div {
+      &.blue-sphere.green {
+        img {
+          width: 89%;
+          position: relative;
+          top: -11%;
+          right: 0%;
+        }
+      }
+    }
+    div {
+      &.image_panel_cont.green {
+        @include width-height(150px, 150px);
+        img {
+          &.my_panel {
+            width: 135%;
+            position: relative;
+            top: -109%;
+            right: -112%;
+          }
+        }
+      }
+    }
+    div {
+      &.image_panel_small_cont.green {
+        @include width-height(150px, 150px);
+        img {
+          &.my_small_panel {
+            width: 71%;
+            position: relative;
+            top: -131%;
+            right: -148%;
+          }
+        }
+      }
+    }
+    div {
+      &.image_cont.man-green {
+        @include width-height(210px, 210px);
+        img {
+          &.my_image {
+            width: 97%;
+            position: relative;
+            top: -249%;
+            right: -25%;
           }
         }
       }
