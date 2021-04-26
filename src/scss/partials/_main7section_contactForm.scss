@@ -1,8 +1,8 @@
 section {
   &.section_seven {
-    width: 100vw;
-    height: 60vh;
+    @include width-height(100vw, 60vh);
     background-color: $black;
+    margin-top: 100px;
     div {
       &.center_container {
         @include container-center;
@@ -28,8 +28,7 @@ div {
   &.contact_container {
     div {
       &.form {
-        width: 310px;
-        height: 450px;
+        @include width-height(310px, 450px);
         margin-left: 50px;
         div {
           &.input_container {
@@ -37,6 +36,66 @@ div {
               &.red_button {
                 @include width(92%);
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+div {
+  &.foot_sec_section {
+    div {
+      &.chat_cont {
+        @include width-height(200px, 200px);
+        z-index: 2;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        div {
+          &.avatar_girl {
+            @include width-height(50px, 50px);
+            border-radius: 50%;
+            position: absolute;
+            img {
+              width: 100%;
+              border-radius: 100%;
+              @include transform-translate(-14%, 190%);
+            }
+          }
+        }
+        div {
+          &.text {
+            margin-right: 10px;
+            p {
+              color: $grey-opaque;
+              font-size: 0.8em;
+              padding: 20px;
+              background-color: $white;
+              border-radius: 3px;
+              box-shadow: 1px 0px 30px $grey-light;
+              border: $grey-light solid 1px;
+              i {
+                color: $grey-opaque;
+                @include transform-translate(9%, 86%);
+                font-size: 18px;
+              }
+            }
+
+          }
+        }
+        div {
+          &.sphere_chat {
+            @include width-height(40px, 40px);
+            border-radius: 50%;
+            background-color: $red-light;
+            position: absolute;
+            margin-left: 120px;
+            padding-bottom: 30px;
+            i {
+              font-size: 17px;
+              color: $white;
+              @include transform-translate(50%, 50%);
             }
           }
         }

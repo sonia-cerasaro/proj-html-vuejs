@@ -1435,13 +1435,14 @@ div.blog_container div.blog_card_cont {
 }
 div.blog_container div.blog_card_cont div.cont_img {
   width: 100%;
-  height: 60%;
+  height: 80%;
 }
 
 section.section_seven {
   width: 100vw;
   height: 60vh;
   background-color: #000;
+  margin-top: 100px;
 }
 section.section_seven div.center_container {
   width: 70%;
@@ -1467,6 +1468,66 @@ div.contact_container div.form {
 }
 div.contact_container div.form div.input_container button.red_button {
   width: 92%;
+}
+
+div.foot_sec_section div.chat_cont {
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+div.foot_sec_section div.chat_cont div.avatar_girl {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+}
+div.foot_sec_section div.chat_cont div.avatar_girl img {
+  width: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: -14%;
+  left: 190%;
+  transform: translate(-50%, -50%);
+}
+div.foot_sec_section div.chat_cont div.text {
+  margin-right: 10px;
+}
+div.foot_sec_section div.chat_cont div.text p {
+  color: #858786;
+  font-size: 0.8em;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 0px 30px #ceccc8;
+  border: #ceccc8 solid 1px;
+}
+div.foot_sec_section div.chat_cont div.text p i {
+  color: #858786;
+  position: absolute;
+  top: 9%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+div.foot_sec_section div.chat_cont div.sphere_chat {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f76210;
+  position: absolute;
+  margin-left: 120px;
+  padding-bottom: 30px;
+}
+div.foot_sec_section div.chat_cont div.sphere_chat i {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 footer {
