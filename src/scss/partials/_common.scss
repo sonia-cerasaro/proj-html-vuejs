@@ -224,11 +224,18 @@ div {
   border-radius: 5px;
 }
 
+.back_womane_red_hair {
+  background-image: url('../images/large-testimonial-400x389.jpg');
+  @include background-box;
+  border-radius: 5px;
+  background-position: center;
+}
+
 //margin/padding-top 10-100px
 
 $types: m, p;
 @each $type in $types {
-  @for $i from 1 through 10 {
+  @for $i from 1 through 50 {
     .#{$type}t_#{$i} {
       @if $type == m {
         margin-top: 10px * $i;

@@ -1,8 +1,6 @@
 section {
   &.secttion_five {
-    width: 100vw;
-    height: 50vh;
-    background-color: lightgrey;
+    @include width-height(100vw, 60vh);
     div {
       &.woman_container {
         @include container-center;
@@ -13,7 +11,7 @@ section {
           &.cards_container_woman {
             width: calc(100% / 2 - 30px);
             height: 100%;
-            border: black solid 1px;
+            margin-top: 95px;
           }
         }
       }

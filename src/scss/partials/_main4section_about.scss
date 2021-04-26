@@ -1,6 +1,6 @@
 section {
   &.section_four {
-    @include width-height(100vw, 140vh);
+    @include width-height(100vw, 130vh);
     background-color: $light-blue;
     background-image: linear-gradient($light-blue, $white);
     div {
@@ -15,7 +15,7 @@ section {
             float: right;
             div {
               &.img_cont {
-                @include width-height(100%, 80%);
+                @include width-height(100%, 95%);
                 margin-top: 53px;
                 img {
                   @include width-height(100%, 100%);
@@ -61,7 +61,15 @@ div {
       &.cont_winner {
         width: calc(100% / 4);
         height: 100%;
-        border: solid black 1px;
+        div {
+          &.cont_brand {
+            @include width-height(100px, 100px);
+            margin: 0 auto;
+            img {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }
