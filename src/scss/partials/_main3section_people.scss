@@ -1,6 +1,6 @@
 section {
   &.section_three {
-    @include width-height(100vw, 60vh);
+    @include width-height(100vw, 75vh);
     div {
       &.container_title {
         @include container-center;
@@ -9,14 +9,21 @@ section {
     div {
       &.cards_container {
         @include container-center;
-        height: 400px;
+        height: 500px;
         display: flex;
         justify-content: space-between;
         div {
           &.cards {
-            width: calc(93% / 3);
+            width: calc(96% / 3);
             height: 100%;
-            border: black solid 1px;
+            div {
+              &.img_cont {
+                @include width-height(100%, 60%);
+                img {
+                  width: 100%;
+                }
+              }
+            }
           }
         }
       }
