@@ -231,6 +231,22 @@ div {
   background-position: center;
 }
 
+.back_laptop {
+  background-image: url('../images/blog-posts-6-400x267.jpg');
+  @include background-box;
+  background-position: center;
+}
+.back_laptop_2 {
+  background-image: url('../images/blog-posts-5-400x267.jpg');
+  @include background-box;
+  background-position: center;
+}
+.back_laptop_3 {
+  background-image: url('../images/blog-posts-4-400x267.jpg');
+  @include background-box;
+  background-position: center;
+}
+
 //margin/padding-top 10-100px
 
 $types: m, p;

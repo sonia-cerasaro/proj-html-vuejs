@@ -1,8 +1,7 @@
 section {
   &.section_six {
-    width: 100vw;
-    height: 50vh;
-    background-color: lightblue;
+    @include width-height(100vw, 60vh);
+    background-image: linear-gradient($light-blue, $white);
     div {
       &.market_container {
         @include container-center;
@@ -13,7 +12,11 @@ section {
           &.elements_cont {
             width: calc(100% / 2);
             height: 100%;
-            border: solid black 1px;
+            button {
+              position: relative;
+              top: 60%;
+              right: -65%;
+            }
           }
         }
       }
@@ -23,14 +26,18 @@ section {
 div {
   &.blog_container {
     @include container-center;
-    height: 50%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
     div {
       &.blog_card_cont {
         width: calc(95% / 3);
-        height: 100%;
-        border: solid black 1px;
+        height: 60%;
+        div {
+          &.cont_img {
+            @include width-height(100%, 60%);
+          }
+        }
       }
     }
   }
