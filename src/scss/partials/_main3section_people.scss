@@ -1,6 +1,6 @@
 section {
   &.section_three {
-    @include width-height(100vw, 75vh);
+    @include width-height(100vw, 80vh);
     div {
       &.container_title {
         @include container-center;
@@ -21,6 +21,7 @@ section {
                 @include width-height(100%, 60%);
                 img {
                   width: 100%;
+                  height: 100%;
                 }
               }
             }
@@ -33,7 +34,7 @@ section {
         @include container-center;
         display: flex;
         justify-content: center;
-        margin-top: 35px;
+        margin-top: 90px;
       }
     }
   }

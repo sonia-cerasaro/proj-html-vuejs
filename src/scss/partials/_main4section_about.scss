@@ -1,21 +1,47 @@
 section {
   &.section_four {
-    width: 100vw;
-    height: 140vh;
-    background-color: lightblue;
+    @include width-height(100vw, 140vh);
+    background-color: $light-blue;
+    background-image: linear-gradient($light-blue, $white);
     div {
       &.about_container {
         @include container-center;
         height: 80%;
-
         div {
           &.square_card {
             width: calc(100% / 2);
-            height: 50%;
-            border: black solid 1px;
+            height: 43%;
             display: inline-block;
             float: right;
+            div {
+              &.img_cont {
+                @include width-height(100%, 80%);
+                margin-top: 53px;
+                img {
+                  @include width-height(100%, 100%);
+                }
+              }
+            }
           }
+        }
+      }
+    }
+  }
+}
+div {
+  &.spec_container {
+    width: 100%;
+    display: flex;
+    div {
+      &.icon_cont{
+        @include width-height(70px, 70px);
+        border: $red-light solid 2px;
+        border-radius: 20px;
+        position: relative;
+        i {
+          @include transform-translate(50%, 50%);
+          color: $red-light;
+          font-size: 28px;
         }
       }
     }

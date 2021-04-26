@@ -203,11 +203,32 @@ div {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/marketing-intro.jpg');
 }
 
-//margin/padding-top 10-70px
+.case_studie_one_backgr {
+  background-image: url('../images/case-studies-1-400x450.jpg');
+  @include background-box;
+}
+
+.case_studie_two_backgr {
+  background-image: url('../images/case-studies-4-400x450.jpg');
+  @include background-box;
+}
+
+.case_studie_three_backgr {
+  background-image: url('../images/case-studies-6-400x450.jpg');
+  @include background-box;
+}
+
+.background-marketing_meeting {
+  background-image: url('../images/we-boost-our-clients-400x366.jpg');
+  @include background-box;
+  border-radius: 5px;
+}
+
+//margin/padding-top 10-100px
 
 $types: m, p;
 @each $type in $types {
-  @for $i from 1 through 7 {
+  @for $i from 1 through 10 {
     .#{$type}t_#{$i} {
       @if $type == m {
         margin-top: 10px * $i;
@@ -218,7 +239,7 @@ $types: m, p;
   }
 }
 
-//margin/padding-bottom 5-50px
+//margin/padding-bottom 5-100px
 
 $types: m, p;
 @each $type in $types {

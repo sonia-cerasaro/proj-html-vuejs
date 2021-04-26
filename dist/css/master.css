@@ -193,6 +193,31 @@ div.form_container div.input_container input {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/marketing-intro.jpg");
 }
 
+.case_studie_one_backgr {
+  background-image: url("../images/case-studies-1-400x450.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.case_studie_two_backgr {
+  background-image: url("../images/case-studies-4-400x450.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.case_studie_three_backgr {
+  background-image: url("../images/case-studies-6-400x450.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-marketing_meeting {
+  background-image: url("../images/we-boost-our-clients-400x366.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
 .mt_1 {
   margin-top: 10px;
 }
@@ -221,6 +246,18 @@ div.form_container div.input_container input {
   margin-top: 70px;
 }
 
+.mt_8 {
+  margin-top: 80px;
+}
+
+.mt_9 {
+  margin-top: 90px;
+}
+
+.mt_10 {
+  margin-top: 100px;
+}
+
 .pt_1 {
   padding-top: 10px;
 }
@@ -247,6 +284,18 @@ div.form_container div.input_container input {
 
 .pt_7 {
   padding-top: 70px;
+}
+
+.pt_8 {
+  padding-top: 80px;
+}
+
+.pt_9 {
+  padding-top: 90px;
+}
+
+.pt_10 {
+  padding-top: 100px;
 }
 
 .mb_1 {
@@ -866,13 +915,17 @@ div.brands_reference div.spec_container div.avatar img {
   border-radius: 50%;
 }
 
+div.spec_container button {
+  height: 45px;
+}
+
 div.spec_container.face {
   display: flex;
 }
 
 section.section_three {
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
 }
 section.section_three div.container_title {
   width: 70%;
@@ -895,19 +948,21 @@ section.section_three div.cards_container div.cards div.img_cont {
 }
 section.section_three div.cards_container div.cards div.img_cont img {
   width: 100%;
+  height: 100%;
 }
 section.section_three div.container_button {
   width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 90px;
 }
 
 section.section_four {
   width: 100vw;
   height: 140vh;
-  background-color: lightblue;
+  background-color: #eff6f7;
+  background-image: linear-gradient(#eff6f7, #fff);
 }
 section.section_four div.about_container {
   width: 70%;
@@ -916,10 +971,38 @@ section.section_four div.about_container {
 }
 section.section_four div.about_container div.square_card {
   width: calc(100% / 2);
-  height: 50%;
-  border: black solid 1px;
+  height: 43%;
   display: inline-block;
   float: right;
+}
+section.section_four div.about_container div.square_card div.img_cont {
+  width: 100%;
+  height: 80%;
+  margin-top: 53px;
+}
+section.section_four div.about_container div.square_card div.img_cont img {
+  width: 100%;
+  height: 100%;
+}
+
+div.spec_container {
+  width: 100%;
+  display: flex;
+}
+div.spec_container div.icon_cont {
+  width: 70px;
+  height: 70px;
+  border: #f76210 solid 2px;
+  border-radius: 20px;
+  position: relative;
+}
+div.spec_container div.icon_cont i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f76210;
+  font-size: 28px;
 }
 
 div.title_awards {
