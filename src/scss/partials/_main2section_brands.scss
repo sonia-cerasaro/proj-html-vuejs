@@ -1,8 +1,6 @@
 section {
   &.section_two {
-    width: 100vw;
-    height: 40vh;
-    background-color: lightblue;
+    @include width-height(100vw, 40vh);
     div {
       &.brands_title {
         @include container-center;
@@ -14,12 +12,18 @@ div {
   &.brands_container {
     @include container-center;
     height: 50px;
+    margin-bottom: 80px;
     display: flex;
     div {
       &.brand_box {
         width: calc(100% / 6);
         height: 100%;
-        border: black solid 1px;
+        margin-right: 10px;
+        position: relative;
+        img {
+          width: 80%;
+          @include transform-translate(50%, 50%);
+        }
       }
     }
   }
@@ -27,17 +31,25 @@ div {
 div {
   &.brands_reference {
     @include container-center;
-    height: 50px;
+    height: 60px;
+    box-shadow: 0px 30px 33px #e3e4e2;
     display: flex;
+    border-radius: 7px;
     div {
       &.spec_container {
         width: calc(100% / 3);
         height: 100%;
-        border: black solid 1px;
-
+        div {
+          &.avatar {
+            @include width-height(50px, 50px);
+            img {
+              width: 100%;
+              border-radius: 50%;
+            }
+          }
+        }
       }
     }
-
   }
 }
 div {

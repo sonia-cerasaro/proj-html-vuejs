@@ -1,12 +1,9 @@
 section {
   &.section_three {
-    width: 100vw;
-    height: 50vh;
-    background-color: lightgrey;
+    @include width-height(100vw, 60vh);
     div {
       &.container_title {
         @include container-center;
-
       }
     }
     div {
@@ -27,6 +24,9 @@ section {
     div {
       &.container_button {
         @include container-center;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
       }
     }
   }

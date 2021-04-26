@@ -233,11 +233,11 @@ $types: m, p;
   }
 }
 
-//margin/padding-left 5-35px
+//margin/padding-left 5-70px
 
 $types: m, p;
 @each $type in $types {
-  @for $i from 1 through 7 {
+  @for $i from 1 through 15 {
     .#{$type}l_#{$i} {
       @if $type == m {
         margin-left: 5px * $i;
@@ -248,11 +248,11 @@ $types: m, p;
   }
 }
 
-//margin/padding-right 5-35px
+//margin/padding-right 5-70px
 
 $types: m, p;
 @each $type in $types {
-  @for $i from 1 through 7 {
+  @for $i from 1 through 15 {
     .#{$type}r_#{$i} {
       @if $type == m {
         margin-right: 5px * $i;

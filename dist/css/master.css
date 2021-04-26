@@ -357,6 +357,38 @@ div.form_container div.input_container input {
   margin-left: 35px;
 }
 
+.ml_8 {
+  margin-left: 40px;
+}
+
+.ml_9 {
+  margin-left: 45px;
+}
+
+.ml_10 {
+  margin-left: 50px;
+}
+
+.ml_11 {
+  margin-left: 55px;
+}
+
+.ml_12 {
+  margin-left: 60px;
+}
+
+.ml_13 {
+  margin-left: 65px;
+}
+
+.ml_14 {
+  margin-left: 70px;
+}
+
+.ml_15 {
+  margin-left: 75px;
+}
+
 .pl_1 {
   padding-left: 5px;
 }
@@ -383,6 +415,38 @@ div.form_container div.input_container input {
 
 .pl_7 {
   padding-left: 35px;
+}
+
+.pl_8 {
+  padding-left: 40px;
+}
+
+.pl_9 {
+  padding-left: 45px;
+}
+
+.pl_10 {
+  padding-left: 50px;
+}
+
+.pl_11 {
+  padding-left: 55px;
+}
+
+.pl_12 {
+  padding-left: 60px;
+}
+
+.pl_13 {
+  padding-left: 65px;
+}
+
+.pl_14 {
+  padding-left: 70px;
+}
+
+.pl_15 {
+  padding-left: 75px;
 }
 
 .mr_1 {
@@ -413,6 +477,38 @@ div.form_container div.input_container input {
   margin-right: 35px;
 }
 
+.mr_8 {
+  margin-right: 40px;
+}
+
+.mr_9 {
+  margin-right: 45px;
+}
+
+.mr_10 {
+  margin-right: 50px;
+}
+
+.mr_11 {
+  margin-right: 55px;
+}
+
+.mr_12 {
+  margin-right: 60px;
+}
+
+.mr_13 {
+  margin-right: 65px;
+}
+
+.mr_14 {
+  margin-right: 70px;
+}
+
+.mr_15 {
+  margin-right: 75px;
+}
+
 .pr_1 {
   padding-right: 5px;
 }
@@ -439,6 +535,38 @@ div.form_container div.input_container input {
 
 .pr_7 {
   padding-right: 35px;
+}
+
+.pr_8 {
+  padding-right: 40px;
+}
+
+.pr_9 {
+  padding-right: 45px;
+}
+
+.pr_10 {
+  padding-right: 50px;
+}
+
+.pr_11 {
+  padding-right: 55px;
+}
+
+.pr_12 {
+  padding-right: 60px;
+}
+
+.pr_13 {
+  padding-right: 65px;
+}
+
+.pr_14 {
+  padding-right: 70px;
+}
+
+.pr_15 {
+  padding-right: 75px;
 }
 
 header div.nav_container {
@@ -690,7 +818,6 @@ div.card.image div.image_cont.man-green img.my_image {
 section.section_two {
   width: 100vw;
   height: 40vh;
-  background-color: lightblue;
 }
 section.section_two div.brands_title {
   width: 70%;
@@ -701,24 +828,42 @@ div.brands_container {
   width: 70%;
   margin: 0 auto;
   height: 50px;
+  margin-bottom: 80px;
   display: flex;
 }
 div.brands_container div.brand_box {
   width: calc(100% / 6);
   height: 100%;
-  border: black solid 1px;
+  margin-right: 10px;
+  position: relative;
+}
+div.brands_container div.brand_box img {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 div.brands_reference {
   width: 70%;
   margin: 0 auto;
-  height: 50px;
+  height: 60px;
+  box-shadow: 0px 30px 33px #e3e4e2;
   display: flex;
+  border-radius: 7px;
 }
 div.brands_reference div.spec_container {
   width: calc(100% / 3);
   height: 100%;
-  border: black solid 1px;
+}
+div.brands_reference div.spec_container div.avatar {
+  width: 50px;
+  height: 50px;
+}
+div.brands_reference div.spec_container div.avatar img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 div.spec_container.face {
@@ -727,8 +872,7 @@ div.spec_container.face {
 
 section.section_three {
   width: 100vw;
-  height: 50vh;
-  background-color: lightgrey;
+  height: 60vh;
 }
 section.section_three div.container_title {
   width: 70%;
@@ -749,6 +893,9 @@ section.section_three div.cards_container div.cards {
 section.section_three div.container_button {
   width: 70%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 section.section_four {
